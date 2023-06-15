@@ -1,0 +1,23 @@
+.toast {
+    width: 300px;
+    margin: 20px 0;
+}
+
+.toast p {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.toast-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.toast-buttons button {
+    font: bold;
+    width: 108px;
+    border-radius: 4px;
+    padding: 10px;
+}

@@ -1,0 +1,34 @@
+.ttt__cardName {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 16px 32px;
+    border-radius: 16px;
+
+    background-color: #242424;
+    border: 2px solid white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ttt__cardName input {
+    width: 224px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid white;
+
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ttt__cardName h3,
+.ttt__cardName input {
+    margin-bottom: 16px;
+}
