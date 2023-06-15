@@ -119,7 +119,7 @@ export function Game({ socket }) {
                 <section>
                     <h1>
                         Esperando a que{" "}
-                        {data.players.find((p) => p.symbol === data.turn).name}{" "}
+                        {data.players.find((p) => p.symbol === data.turn)?.name}{" "}
                         haga su movimiento...
                     </h1>
                 </section>
