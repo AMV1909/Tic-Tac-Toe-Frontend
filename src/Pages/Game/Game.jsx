@@ -60,7 +60,7 @@ export function Game({ socket }) {
     const checkTurn = () => {
         if (data) {
             setWaitTurn(
-                data.players.find((p) => p.id == socket.id).symbol !== data.turn
+                data.players.find((p) => p.id == socket.id)?.symbol !== data.turn
             );
         }
     };
