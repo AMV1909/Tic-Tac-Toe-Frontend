@@ -3,7 +3,7 @@ import confetti from "canvas-confetti";
 export function WinnerModal({ winner, data, resetGame }) {
     if (!winner || winner === null) return null;
 
-    if (winner !== false) {
+    if (winner !== "false") {
         confetti({
             particleCount: 100,
             spread: 70,
@@ -15,7 +15,7 @@ export function WinnerModal({ winner, data, resetGame }) {
         <section className="winner">
             <div className="text">
                 <h2>
-                    {winner == false
+                    {winner === "false"
                         ? "Draw"
                         : `Winner: ${
                               data.players.find((p) => p.symbol === winner)
