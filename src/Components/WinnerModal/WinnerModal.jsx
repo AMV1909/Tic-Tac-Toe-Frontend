@@ -11,13 +11,11 @@ export function WinnerModal({ winner, data, resetGame }) {
         });
     }
 
-    console.log(winner);
-
     return (
         <section className="winner">
             <div className="text">
                 <h2>
-                    {winner === false
+                    {winner == false
                         ? "Draw"
                         : `Winner: ${
                               data.players.find((p) => p.symbol === winner)
