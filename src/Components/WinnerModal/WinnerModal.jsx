@@ -11,6 +11,8 @@ export function WinnerModal({ winner, data, resetGame }) {
         });
     }
 
+    console.log(winner);
+
     return (
         <section className="winner">
             <div className="text">
@@ -18,7 +20,8 @@ export function WinnerModal({ winner, data, resetGame }) {
                     {winner === false
                         ? "Draw"
                         : `Winner: ${
-                              data.players.find((p) => p.symbol === winner)?.name
+                              data.players.find((p) => p.symbol === winner)
+                                  ?.name
                           }`}
                 </h2>
 
